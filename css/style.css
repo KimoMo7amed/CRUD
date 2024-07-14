@@ -1,0 +1,46 @@
+body{
+
+    font-family: "Prompt", sans-serif;
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    box-shadow:none;
+    border-color:darkcyan !important;
+   
+}
+
+
+
+.logo h2{
+
+    
+    transition: .4s all;
+}
+
+.product-img{
+
+    height: 150px;
+    overflow: hidden;
+}
+
+h2:hover {
+
+scale: 1.4;
+}
+
+.fa-trash-can:hover{
+
+    animation: fa-shake 2s 1 linear;
+}
+
+.col{
+
+    transition: .4s all;
+}
+
+.col:hover{
+
+    scale: 1.1;
+}

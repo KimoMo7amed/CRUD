@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Css style-->
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--google font-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+
+    <title>CRUD</title>
+</head>
+<body>
+
+<div class="logo my-4 d-flex justify-content-center ">
+
+  <h2 class="shadow-sm p-3 border rounded fs-1"><strong class="text-info">E</strong>LONSOL <strong class="text-info">S</strong>TORE <i class="fa-solid fa-store  fs-1 text-info"></i></h2>
+  
+
+</div>
+
+<div class="mx-auto w-75 py-5">
+
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control border-0 border-bottom rounded-0" 
+        id="productName" placeholder="name@example.com">
+        <label for="productName">Proudct Name</label>
+      </div>
+
+
+      <div class="form-floating mb-3">
+        <input type="number" class="form-control border-0 border-bottom rounded-0" 
+        id="productPrice" placeholder="name@example.com">
+        <label for="productPrice">Proudct Price</label>
+      </div>
+
+
+
+
+      <div class="form-floating mb-3">
+      <select class="form-select  border-0 border-bottom rounded-0" 
+      id="proudctCategory" aria-label="Floating label select example">
+          <option selected disabled hidden>Choose Proudct Category </option>
+          <option>Tv</option>
+          <option>Mobile-phone</option>
+          <option>Labtop</option>
+          <option>Printer</option>
+          <option>Camera</option>
+        </select>
+        <label for="proudctCategory">Proudct Category</label>
+      </div>
+
+
+
+
+      <div class="form-floating mb-3 mt-2">
+        <textarea class="form-control border-0 border-bottom rounded-0" placeholder="Leave a comment here" 
+        id="proudctDescraption"></textarea>
+        <label for="proudctDescraption">Proudct Descraption</label>
+      </div>
+
+
+      <div class="form-floating mb-3">
+        <input type="file" class="form-control border-0 border-bottom rounded-0"
+         id="productimage" placeholder="name@example.com">
+        <label for="productimage">Proudct image</label>
+      </div>
+
+
+
+      <button id="addProductButton" onclick="addProduct()"  class="btn btn-info text-light my-2 d-block">Add Proudct</button>
+      <button id="updateProductBotton" onclick="updateProducts()"  class="btn btn-danger text-light my-2 d-none">Update Proudct</button>
+
+</div>
+
+
+<div class="container">
+
+  <input oninput="searchByName(this.value)" type="search" class="form-control border-2 my-4 " placeholder="Search By ProductName">
+
+
+  <div id="productElement" class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+    
+
+
+  </div>
+</div>
+
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    
+    <script src="./js/index.js"></script>
+</body>
+</html>
